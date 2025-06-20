@@ -36,42 +36,5 @@ public class NotificationServiceApplication {
 		resolver.setCacheable(false);
 		return resolver;
 	}
-	
-	
-//	@Bean
-//	public CommandLineRunner seedTemplate(TemplateRepository templateRepository) {
-//	    return args -> {
-//	        // Check if template already exists
-////	        if (templateRepository.findByTemplateNameAndIsActiveTrue("testing_template")) {
-//	            String htmlContent = """
-//	                <!DOCTYPE html>
-//	                <html xmlns:th="http://www.thymeleaf.org">
-//	                <head>
-//	                    <title th:text="${title}">Welcome</title>
-//	                </head>
-//	                <body>
-//	                    <h1 th:text="${summary}">Hello!</h1>
-//	                    <p th:text="${content}">Welcome to our platform.</p>
-//	                </body>
-//	                </html>
-//	            """;
-//	            
-//	            Template template = Template.builder()
-//	                .templateName("testing_template")
-//	                .templateContent(htmlContent)
-//	                .title("Welcome Email")
-//	                .summaryContent("Welcome to our app")
-//	                .contentCategory("EMAIL")
-//	                .contentType("HTML")
-//	                .isActive(true)
-//	                .createdAt(LocalDateTime.now()).updatedAt(LocalDateTime.now()).build();
-//	                
-//	            templateRepository.save(template);
-//	            System.out.println("Sample template seeded.");
-////	        } else {
-////	            System.out.println("Template already exists, skipping seed.");
-////	        }
-//	    };
-//	}
 
 }
